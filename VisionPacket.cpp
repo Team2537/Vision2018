@@ -15,9 +15,16 @@ void VisionPacket::addObject(std::vector<cv::Point> convexHull){
     addObject(object);
 }
 
+/* The protocol looks like this:
+ * >x0,y0|x1,y1#x0,y0|x1,y1>
+ *
+ * '>' separates packets
+ * '#' separates convex hulls/objects
+ * '|' separates points
+ */
 std::string VisionPacket::serialize(){
     std::stringstream serialization;
-    serialization << "<";
+    serialization << ">";
     for(int y = 0; y < objects.size(); y++){
         /* object delimiter = #
          * we do not place the delimiter for the first object

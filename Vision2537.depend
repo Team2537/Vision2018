@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1512279777 source:/home/pi/Vision2537/Vision2537/main.cpp
+1517076524 source:/home/pi/Vision2537/Vision2537/main.cpp
 	<stdlib.h>
 	<iostream>
 	<csignal>
+	"Settings.h"
 	"RioSerial.hpp"
 	"VisionPacket.hpp"
 	"neopixel.h"
@@ -1105,7 +1106,7 @@
 	"version.h"
 	"ws2811.h"
 
-1511579663 source:/home/pi/Vision2537/Vision2537/neopixel.c
+1517076271 source:/home/pi/Vision2537/Vision2537/neopixel.c
 	<stdint.h>
 	<stdio.h>
 	<stdlib.h>
@@ -1119,6 +1120,7 @@
 	<stdarg.h>
 	<getopt.h>
 	"neopixel.h"
+	"Settings.h"
 	"clk.h"
 	"gpio.h"
 	"dma.h"
@@ -1126,12 +1128,12 @@
 	"version.h"
 	"ws2811.h"
 
-1511579618 /home/pi/Vision2537/Vision2537/neopixel.h
+1517076243 /home/pi/Vision2537/Vision2537/neopixel.h
 
-1512251247 source:/home/pi/Vision2537/Vision2537/RioSerial.cpp
+1517018694 source:/home/pi/Vision2537/Vision2537/RioSerial.cpp
 	"RioSerial.hpp"
 
-1512253424 /home/pi/Vision2537/Vision2537/RioSerial.hpp
+1517075846 /home/pi/Vision2537/Vision2537/RioSerial.hpp
 	<wiringPi.h>
 	<wiringSerial.h>
 	<string>
@@ -1140,6 +1142,7 @@
 	<stdio.h>
 	<errno.h>
 	<pthread.h>
+	"Settings.h"
 
 1512253424 /home/pi/Vision2537/Vision2537//RioSerial.hpp
 	<wiringPi.h>
@@ -1155,7 +1158,7 @@
 	<string>
 	<iostream>
 
-1512280345 source:/home/pi/Vision2537/Vision2537/VisionPacket.cpp
+1517075002 source:/home/pi/Vision2537/Vision2537/VisionPacket.cpp
 	"VisionPacket.hpp"
 
 1512250470 source:/home/pi/Vision2537/Vision2537/VisionPacketHandler.cpp
@@ -1193,4 +1196,6 @@
 	<vector>
 	<opencv2/core/core.hpp>
 	"stdlib.h"
+
+1517083766 /home/pi/Vision2537/Vision2537/Settings.h
 

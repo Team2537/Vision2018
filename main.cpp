@@ -2,6 +2,8 @@
 #include <iostream>
 #include <csignal>
 
+#include "Settings.h"
+
 #include "RioSerial.hpp"
 #include "VisionPacket.hpp"
 
@@ -12,43 +14,6 @@ extern "C"{
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
-
-/* DEBUG */
-//#define VERBOSE
-#define DISPLAY_VIDEO 0     /* undef: no video   0: raw input   1: threshold */
-//#define DRAW_CONTOURS
-#define DRAW_CONVEX_HULL
-//#define DRAW_BOUNDING_BOXES
-
-/* CAMERA */
-#define FRAME_WIDTH   640  /* Low Res: 640   HD: 1080 */
-#define FRAME_HEIGHT  480  /* Low Res: 480   HD: 720  */
-#define MAX_FPS       255
-
-/* LIGHT RING */
-//#define ACTIVATE_LIGHT_RING 0X0000FF00 /* bytes are arranged: WWBBGGRR where W represents white */
-#define TOTAL_LED     12
-
-/* BASELINE RGB */
-#define BASE_R 123
-#define BASE_G 123
-#define BASE_B 123
-
-#define BRIGHTNESS_ADJUSTMENT 0.25
-
-/* LOW SEGMENTATION BOUNDARY */
-#define LOW_SEG_R     125
-#define LOW_SEG_G     125
-#define LOW_SEG_B     0
-
-/* HIGH SEGMENTATION BOUNDARY */
-#define HIGH_SEG_R    255
-#define HIGH_SEG_G    255
-#define HIGH_SEG_B    50
-
-/* OBJECT SEGMENTATION PARAMETERS */
-#define BOUNDING_BOX_MIN_WIDTH  FRAME_WIDTH  * 0.12
-#define BOUNDING_BOX_MIN_HEIGHT FRAME_HEIGHT * 0.12
 
 /**
  * Called during the destruction a std::atexit(<function>) object
@@ -176,8 +141,11 @@ int main(int argc, char** argv){
 #endif /* DRAW_CONVEX_HULL */
             }
         }
-        RioSerial::write(visionPacket.serialize());
-        std::cout << visionPacket.serialize() << std::endl;
+        std::string serializedString = visionPacket.serialize();
+        RioSerial::write(serializedString);
+#ifdef PRINT_RAW_SERIAL
+        std::cout << serializedString << std::endl;
+#endif /* PRINT_RAW_SERIAL */
 
 #ifdef VERBOSE
         std::cout << "FPS: " << (cv::getTickFrequency() / (cv::getTickCount() - startTime)) << std::endl;
