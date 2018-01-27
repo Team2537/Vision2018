@@ -1,0 +1,1196 @@
+# depslib dependency file v1.0
+1512279777 source:/home/pi/Vision2537/Vision2537/main.cpp
+	<stdlib.h>
+	<iostream>
+	<csignal>
+	"RioSerial.hpp"
+	"VisionPacket.hpp"
+	"neopixel.h"
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc.hpp>
+	<opencv2/highgui.hpp>
+
+1511543521 /usr/local/include/opencv2/core/core.hpp
+	"opencv2/core.hpp"
+
+1511543521 /usr/local/include/opencv2/core.hpp
+	"opencv2/core/cvdef.h"
+	"opencv2/core/version.hpp"
+	"opencv2/core/base.hpp"
+	"opencv2/core/cvstd.hpp"
+	"opencv2/core/traits.hpp"
+	"opencv2/core/matx.hpp"
+	"opencv2/core/types.hpp"
+	"opencv2/core/mat.hpp"
+	"opencv2/core/persistence.hpp"
+	"opencv2/opencv.hpp"
+	"opencv2/xfeatures2d.hpp"
+	"opencv2/core/operations.hpp"
+	"opencv2/core/cvstd.inl.hpp"
+	"opencv2/core/utility.hpp"
+	"opencv2/core/optim.hpp"
+	"opencv2/core/ovx.hpp"
+
+1511543521 /usr/local/include/opencv2/core/cvdef.h
+	"cvconfig.h"
+	<limits.h>
+	"opencv2/core/hal/interface.h"
+	"cv_cpu_dispatch.h"
+	<intrin.h>
+	<array>
+
+1511543904 /usr/local/include/opencv2/cvconfig.h
+
+1511543521 /usr/local/include/opencv2/core/hal/interface.h
+	<cstddef>
+	<stddef.h>
+	<stdbool.h>
+	<cstdint>
+	<stdint.h>
+
+1511543521 /usr/local/include/opencv2/core/cv_cpu_dispatch.h
+	"cv_cpu_config.h"
+	"cv_cpu_helper.h"
+	<emmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<nmmintrin.h>
+	<popcntintrin.h>
+	<immintrin.h>
+	<arm_neon.h>
+	<immintrin.h>
+	<immintrin.h>
+	<Intrin.h>
+	<arm_neon.h>
+	<arm_neon.h>
+	<arm_neon.h>
+	<altivec.h>
+	<emmintrin.h>
+	<Intrin.h>
+	<arm_neon.h>
+	<arm_neon.h>
+	<altivec.h>
+
+1511543521 /usr/local/include/opencv2/core/cv_cpu_helper.h
+
+1511543521 /usr/local/include/opencv2/core/version.hpp
+
+1511543521 /usr/local/include/opencv2/core/base.hpp
+	"opencv2/opencv_modules.hpp"
+	<climits>
+	<algorithm>
+	"opencv2/core/cvdef.h"
+	"opencv2/core/cvstd.hpp"
+	"opencv2/core/neon_utils.hpp"
+	"opencv2/core/vsx_utils.hpp"
+
+1511543905 /usr/local/include/opencv2/opencv_modules.hpp
+
+1511543521 /usr/local/include/opencv2/core/cvstd.hpp
+	"opencv2/core/cvdef.h"
+	<cstddef>
+	<cstring>
+	<cctype>
+	<string>
+	<algorithm>
+	<utility>
+	<cstdlib>
+	<cmath>
+	"opencv2/core/ptr.inl.hpp"
+
+1511543521 /usr/local/include/opencv2/core/ptr.inl.hpp
+	<algorithm>
+
+1511543521 /usr/local/include/opencv2/core/neon_utils.hpp
+	"opencv2/core/cvdef.h"
+
+1511543521 /usr/local/include/opencv2/core/vsx_utils.hpp
+	"opencv2/core/cvdef.h"
+
+1511543521 /usr/local/include/opencv2/core/traits.hpp
+	"opencv2/core/cvdef.h"
+
+1511543521 /usr/local/include/opencv2/core/matx.hpp
+	"opencv2/core/cvdef.h"
+	"opencv2/core/base.hpp"
+	"opencv2/core/traits.hpp"
+	"opencv2/core/saturate.hpp"
+	<initializer_list>
+
+1511543521 /usr/local/include/opencv2/core/saturate.hpp
+	"opencv2/core/cvdef.h"
+	"opencv2/core/fast_math.hpp"
+
+1511543521 /usr/local/include/opencv2/core/fast_math.hpp
+	"opencv2/core/cvdef.h"
+	<emmintrin.h>
+	<cmath>
+	<fastmath.h>
+	<math.h>
+	"tegra_round.hpp"
+
+1511543521 /usr/local/include/opencv2/core/types.hpp
+	<climits>
+	<cfloat>
+	<vector>
+	<limits>
+	"opencv2/core/cvdef.h"
+	"opencv2/core/cvstd.hpp"
+	"opencv2/core/matx.hpp"
+
+1511543521 /usr/local/include/opencv2/core/mat.hpp
+	"opencv2/core/matx.hpp"
+	"opencv2/core/types.hpp"
+	"opencv2/core/bufferpool.hpp"
+	<type_traits>
+	"opencv2/core/mat.inl.hpp"
+
+1511543521 /usr/local/include/opencv2/core/bufferpool.hpp
+
+1511543521 /usr/local/include/opencv2/core/mat.inl.hpp
+
+1511543521 /usr/local/include/opencv2/core/persistence.hpp
+	"opencv2/core/types.hpp"
+	"opencv2/core/mat.hpp"
+	"opencv2/opencv.hpp"
+	<time.h>
+
+1511543521 /usr/local/include/opencv2/opencv.hpp
+	"opencv2/opencv_modules.hpp"
+	"opencv2/core.hpp"
+	"opencv2/calib3d.hpp"
+	"opencv2/features2d.hpp"
+	"opencv2/flann.hpp"
+	"opencv2/highgui.hpp"
+	"opencv2/imgcodecs.hpp"
+	"opencv2/imgproc.hpp"
+	"opencv2/ml.hpp"
+	"opencv2/objdetect.hpp"
+	"opencv2/photo.hpp"
+	"opencv2/shape.hpp"
+	"opencv2/stitching.hpp"
+	"opencv2/superres.hpp"
+	"opencv2/video.hpp"
+	"opencv2/videoio.hpp"
+	"opencv2/videostab.hpp"
+	"opencv2/viz.hpp"
+	"opencv2/cudaarithm.hpp"
+	"opencv2/cudabgsegm.hpp"
+	"opencv2/cudacodec.hpp"
+	"opencv2/cudafeatures2d.hpp"
+	"opencv2/cudafilters.hpp"
+	"opencv2/cudaimgproc.hpp"
+	"opencv2/cudaobjdetect.hpp"
+	"opencv2/cudaoptflow.hpp"
+	"opencv2/cudastereo.hpp"
+	"opencv2/cudawarping.hpp"
+
+1511543521 /usr/local/include/opencv2/calib3d.hpp
+	"opencv2/core.hpp"
+	"opencv2/features2d.hpp"
+	"opencv2/core/affine.hpp"
+	"opencv2/calib3d/calib3d_c.h"
+
+1511543522 /usr/local/include/opencv2/features2d.hpp
+	"opencv2/opencv_modules.hpp"
+	"opencv2/core.hpp"
+	"opencv2/flann/miniflann.hpp"
+
+1511543522 /usr/local/include/opencv2/flann/miniflann.hpp
+	"opencv2/core.hpp"
+	"opencv2/flann/defines.h"
+
+1511543522 /usr/local/include/opencv2/flann/defines.h
+	"config.h"
+
+1511543522 /usr/local/include/opencv2/flann/config.h
+
+1511543521 /usr/local/include/opencv2/core/affine.hpp
+	<opencv2/core.hpp>
+
+1511543521 /usr/local/include/opencv2/calib3d/calib3d_c.h
+	"opencv2/core/core_c.h"
+
+1511543521 /usr/local/include/opencv2/core/core_c.h
+	"opencv2/core/types_c.h"
+	"cxcore.h"
+	"cxcore.h"
+	"opencv2/core/utility.hpp"
+
+1511543521 /usr/local/include/opencv2/core/types_c.h
+	<ipl.h>
+	<ipl/ipl.h>
+	"opencv2/core/cvdef.h"
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	"opencv2/core.hpp"
+
+1511543521 /usr/local/include/opencv/cxcore.h
+	"opencv2/core/core_c.h"
+
+1511543521 /usr/local/include/opencv2/core/utility.hpp
+	"opencv2/core.hpp"
+	<ostream>
+	<functional>
+	"opencv2/core/core_c.h"
+
+1511543522 /usr/local/include/opencv2/flann.hpp
+	"opencv2/core.hpp"
+	"opencv2/flann/miniflann.hpp"
+	"opencv2/flann/flann_base.hpp"
+
+1511543522 /usr/local/include/opencv2/flann/flann_base.hpp
+	<vector>
+	<cassert>
+	<cstdio>
+	"general.h"
+	"matrix.h"
+	"params.h"
+	"saving.h"
+	"all_indices.h"
+
+1511543522 /usr/local/include/opencv2/flann/general.h
+	"opencv2/core.hpp"
+
+1511543522 /usr/local/include/opencv2/flann/matrix.h
+	<stdio.h>
+	"general.h"
+
+1511543522 /usr/local/include/opencv2/flann/params.h
+	"any.h"
+	"general.h"
+	<iostream>
+	<map>
+
+1511543522 /usr/local/include/opencv2/flann/any.h
+	"defines.h"
+	<stdexcept>
+	<ostream>
+	<typeinfo>
+
+1511543522 /usr/local/include/opencv2/flann/saving.h
+	<cstring>
+	<vector>
+	"general.h"
+	"nn_index.h"
+
+1511543522 /usr/local/include/opencv2/flann/nn_index.h
+	"general.h"
+	"matrix.h"
+	"result_set.h"
+	"params.h"
+
+1511543522 /usr/local/include/opencv2/flann/result_set.h
+	<algorithm>
+	<cstring>
+	<iostream>
+	<limits>
+	<set>
+	<vector>
+
+1511543522 /usr/local/include/opencv2/flann/all_indices.h
+	"general.h"
+	"nn_index.h"
+	"kdtree_index.h"
+	"kdtree_single_index.h"
+	"kmeans_index.h"
+	"composite_index.h"
+	"linear_index.h"
+	"hierarchical_clustering_index.h"
+	"lsh_index.h"
+	"autotuned_index.h"
+
+1511543522 /usr/local/include/opencv2/flann/kdtree_index.h
+	<algorithm>
+	<map>
+	<cassert>
+	<cstring>
+	"general.h"
+	"nn_index.h"
+	"dynamic_bitset.h"
+	"matrix.h"
+	"result_set.h"
+	"heap.h"
+	"allocator.h"
+	"random.h"
+	"saving.h"
+
+1511543522 /usr/local/include/opencv2/flann/dynamic_bitset.h
+	<boost/dynamic_bitset.hpp>
+	<limits.h>
+	"dist.h"
+
+1511543522 /usr/local/include/opencv2/flann/dist.h
+	<cmath>
+	<cstdlib>
+	<string.h>
+	<stdint.h>
+	"defines.h"
+	<Intrin.h>
+	"arm_neon.h"
+
+1511543522 /usr/local/include/opencv2/flann/heap.h
+	<algorithm>
+	<vector>
+
+1511543522 /usr/local/include/opencv2/flann/allocator.h
+	<stdlib.h>
+	<stdio.h>
+
+1511543522 /usr/local/include/opencv2/flann/random.h
+	<algorithm>
+	<cstdlib>
+	<vector>
+	"general.h"
+
+1511543522 /usr/local/include/opencv2/flann/kdtree_single_index.h
+	<algorithm>
+	<map>
+	<cassert>
+	<cstring>
+	"general.h"
+	"nn_index.h"
+	"matrix.h"
+	"result_set.h"
+	"heap.h"
+	"allocator.h"
+	"random.h"
+	"saving.h"
+
+1511543522 /usr/local/include/opencv2/flann/kmeans_index.h
+	<algorithm>
+	<map>
+	<cassert>
+	<limits>
+	<cmath>
+	"general.h"
+	"nn_index.h"
+	"dist.h"
+	"matrix.h"
+	"result_set.h"
+	"heap.h"
+	"allocator.h"
+	"random.h"
+	"saving.h"
+	"logger.h"
+
+1511543522 /usr/local/include/opencv2/flann/logger.h
+	<stdio.h>
+	<stdarg.h>
+	"defines.h"
+
+1511543522 /usr/local/include/opencv2/flann/composite_index.h
+	"general.h"
+	"nn_index.h"
+	"kdtree_index.h"
+	"kmeans_index.h"
+
+1511543522 /usr/local/include/opencv2/flann/linear_index.h
+	"general.h"
+	"nn_index.h"
+
+1511543522 /usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+	<algorithm>
+	<map>
+	<cassert>
+	<limits>
+	<cmath>
+	"general.h"
+	"nn_index.h"
+	"dist.h"
+	"matrix.h"
+	"result_set.h"
+	"heap.h"
+	"allocator.h"
+	"random.h"
+	"saving.h"
+
+1511543522 /usr/local/include/opencv2/flann/lsh_index.h
+	<algorithm>
+	<cassert>
+	<cstring>
+	<map>
+	<vector>
+	"general.h"
+	"nn_index.h"
+	"matrix.h"
+	"result_set.h"
+	"heap.h"
+	"lsh_table.h"
+	"allocator.h"
+	"random.h"
+	"saving.h"
+
+1511543522 /usr/local/include/opencv2/flann/lsh_table.h
+	<algorithm>
+	<iostream>
+	<iomanip>
+	<limits.h>
+	<unordered_map>
+	<map>
+	<math.h>
+	<stddef.h>
+	"dynamic_bitset.h"
+	"matrix.h"
+
+1511543522 /usr/local/include/opencv2/flann/autotuned_index.h
+	<sstream>
+	"general.h"
+	"nn_index.h"
+	"ground_truth.h"
+	"index_testing.h"
+	"sampling.h"
+	"kdtree_index.h"
+	"kdtree_single_index.h"
+	"kmeans_index.h"
+	"composite_index.h"
+	"linear_index.h"
+	"logger.h"
+
+1511543522 /usr/local/include/opencv2/flann/ground_truth.h
+	"dist.h"
+	"matrix.h"
+
+1511543522 /usr/local/include/opencv2/flann/index_testing.h
+	<cstring>
+	<cassert>
+	<cmath>
+	"matrix.h"
+	"nn_index.h"
+	"result_set.h"
+	"logger.h"
+	"timer.h"
+
+1511543522 /usr/local/include/opencv2/flann/timer.h
+	<time.h>
+	"opencv2/core.hpp"
+	"opencv2/core/utility.hpp"
+
+1511543522 /usr/local/include/opencv2/flann/sampling.h
+	"matrix.h"
+	"random.h"
+
+1511543531 /usr/local/include/opencv2/highgui.hpp
+	"opencv2/core.hpp"
+	"opencv2/imgcodecs.hpp"
+	"opencv2/videoio.hpp"
+	"opencv2/highgui/highgui_c.h"
+
+1511543543 /usr/local/include/opencv2/imgcodecs.hpp
+	"opencv2/core.hpp"
+	<opencv2/opencv.hpp>
+
+1511543556 /usr/local/include/opencv2/videoio.hpp
+	"opencv2/core.hpp"
+
+1511543531 /usr/local/include/opencv2/highgui/highgui_c.h
+	"opencv2/core/core_c.h"
+	"opencv2/imgproc/imgproc_c.h"
+	"opencv2/imgcodecs/imgcodecs_c.h"
+	"opencv2/videoio/videoio_c.h"
+
+1511543556 /usr/local/include/opencv2/imgproc/imgproc_c.h
+	"opencv2/imgproc/types_c.h"
+
+1511543556 /usr/local/include/opencv2/imgproc/types_c.h
+	"opencv2/core/core_c.h"
+
+1511543543 /usr/local/include/opencv2/imgcodecs/imgcodecs_c.h
+	"opencv2/core/core_c.h"
+
+1511543556 /usr/local/include/opencv2/videoio/videoio_c.h
+	"opencv2/core/core_c.h"
+
+1511543556 /usr/local/include/opencv2/imgproc.hpp
+	"opencv2/core.hpp"
+	<opencv2/core.hpp>
+	<opencv2/imgproc.hpp>
+	<opencv2/imgcodecs.hpp>
+	<opencv2/highgui.hpp>
+	<iostream>
+	<opencv2/imgproc.hpp>
+	<opencv2/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	<opencv2/highgui.hpp>
+	<math.h>
+	<opencv2/imgproc.hpp>
+	<opencv2/highgui.hpp>
+	"opencv2/imgproc.hpp"
+	"opencv2/highgui.hpp"
+	"opencv2/imgproc/imgproc_c.h"
+
+1511543556 /usr/local/include/opencv2/ml.hpp
+	"opencv2/core.hpp"
+	<float.h>
+	<map>
+	<iostream>
+
+1511543556 /usr/local/include/opencv2/objdetect.hpp
+	"opencv2/core.hpp"
+	"opencv2/objdetect/detection_based_tracker.hpp"
+	"opencv2/objdetect/objdetect_c.h"
+
+1511543556 /usr/local/include/opencv2/objdetect/detection_based_tracker.hpp
+	<opencv2/core.hpp>
+	<vector>
+
+1511543556 /usr/local/include/opencv2/objdetect/objdetect_c.h
+	"opencv2/core/core_c.h"
+	<deque>
+	<vector>
+
+1511543556 /usr/local/include/opencv2/photo.hpp
+	"opencv2/core.hpp"
+	"opencv2/imgproc.hpp"
+	"opencv2/photo/photo_c.h"
+
+1511543556 /usr/local/include/opencv2/photo/photo_c.h
+	"opencv2/core/core_c.h"
+
+1511543556 /usr/local/include/opencv2/shape.hpp
+	"opencv2/shape/emdL1.hpp"
+	"opencv2/shape/shape_transformer.hpp"
+	"opencv2/shape/hist_cost.hpp"
+	"opencv2/shape/shape_distance.hpp"
+
+1511543556 /usr/local/include/opencv2/shape/emdL1.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/shape/shape_transformer.hpp
+	<vector>
+	"opencv2/core.hpp"
+	"opencv2/imgproc.hpp"
+
+1511543556 /usr/local/include/opencv2/shape/hist_cost.hpp
+	"opencv2/imgproc.hpp"
+
+1511543556 /usr/local/include/opencv2/shape/shape_distance.hpp
+	"opencv2/core.hpp"
+	"opencv2/shape/hist_cost.hpp"
+	"opencv2/shape/shape_transformer.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching.hpp
+	"opencv2/core.hpp"
+	"opencv2/features2d.hpp"
+	"opencv2/stitching/warpers.hpp"
+	"opencv2/stitching/detail/matchers.hpp"
+	"opencv2/stitching/detail/motion_estimators.hpp"
+	"opencv2/stitching/detail/exposure_compensate.hpp"
+	"opencv2/stitching/detail/seam_finders.hpp"
+	"opencv2/stitching/detail/blenders.hpp"
+	"opencv2/stitching/detail/camera.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/warpers.hpp
+	"opencv2/stitching/detail/warpers.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/warpers.hpp
+	"opencv2/core.hpp"
+	"opencv2/core/cuda.hpp"
+	"opencv2/imgproc.hpp"
+	"opencv2/opencv_modules.hpp"
+	"warpers_inl.hpp"
+
+1511543521 /usr/local/include/opencv2/core/cuda.hpp
+	"opencv2/core.hpp"
+	"opencv2/core/cuda_types.hpp"
+	"opencv2/core/cuda.inl.hpp"
+
+1511543521 /usr/local/include/opencv2/core/cuda_types.hpp
+
+1511543521 /usr/local/include/opencv2/core/cuda.inl.hpp
+	"opencv2/core/cuda.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/warpers_inl.hpp
+	"opencv2/core.hpp"
+	"warpers.hpp"
+	<limits>
+
+1511543556 /usr/local/include/opencv2/stitching/detail/matchers.hpp
+	"opencv2/core.hpp"
+	"opencv2/features2d.hpp"
+	"opencv2/opencv_modules.hpp"
+	"opencv2/xfeatures2d/cuda.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/motion_estimators.hpp
+	"opencv2/core.hpp"
+	"matchers.hpp"
+	"util.hpp"
+	"camera.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/util.hpp
+	<list>
+	"opencv2/core.hpp"
+	"util_inl.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/util_inl.hpp
+	<queue>
+	"opencv2/core.hpp"
+	"util.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/camera.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/exposure_compensate.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/seam_finders.hpp
+	<set>
+	"opencv2/core.hpp"
+	"opencv2/opencv_modules.hpp"
+
+1511543556 /usr/local/include/opencv2/stitching/detail/blenders.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/superres.hpp
+	"opencv2/core.hpp"
+	"opencv2/superres/optical_flow.hpp"
+
+1511543556 /usr/local/include/opencv2/superres/optical_flow.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/video.hpp
+	"opencv2/video/tracking.hpp"
+	"opencv2/video/background_segm.hpp"
+	"opencv2/video/tracking_c.h"
+
+1511543556 /usr/local/include/opencv2/video/tracking.hpp
+	"opencv2/core.hpp"
+	"opencv2/imgproc.hpp"
+
+1511543556 /usr/local/include/opencv2/video/background_segm.hpp
+	"opencv2/core.hpp"
+
+1511543556 /usr/local/include/opencv2/video/tracking_c.h
+	"opencv2/imgproc/types_c.h"
+
+1511543557 /usr/local/include/opencv2/videostab.hpp
+	"opencv2/videostab/stabilizer.hpp"
+	"opencv2/videostab/ring_buffer.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/stabilizer.hpp
+	<vector>
+	<ctime>
+	"opencv2/core.hpp"
+	"opencv2/imgproc.hpp"
+	"opencv2/videostab/global_motion.hpp"
+	"opencv2/videostab/motion_stabilizing.hpp"
+	"opencv2/videostab/frame_source.hpp"
+	"opencv2/videostab/log.hpp"
+	"opencv2/videostab/inpainting.hpp"
+	"opencv2/videostab/deblurring.hpp"
+	"opencv2/videostab/wobble_suppression.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/global_motion.hpp
+	<vector>
+	<fstream>
+	"opencv2/core.hpp"
+	"opencv2/features2d.hpp"
+	"opencv2/opencv_modules.hpp"
+	"opencv2/videostab/optical_flow.hpp"
+	"opencv2/videostab/motion_core.hpp"
+	"opencv2/videostab/outlier_rejection.hpp"
+	"opencv2/cudaimgproc.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/optical_flow.hpp
+	"opencv2/core.hpp"
+	"opencv2/opencv_modules.hpp"
+	"opencv2/cudaoptflow.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/motion_core.hpp
+	<cmath>
+	"opencv2/core.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/outlier_rejection.hpp
+	<vector>
+	"opencv2/core.hpp"
+	"opencv2/videostab/motion_core.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/motion_stabilizing.hpp
+	<vector>
+	<utility>
+	"opencv2/core.hpp"
+	"opencv2/videostab/global_motion.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/frame_source.hpp
+	<vector>
+	"opencv2/core.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/log.hpp
+	"opencv2/core.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/inpainting.hpp
+	<vector>
+	"opencv2/core.hpp"
+	"opencv2/videostab/optical_flow.hpp"
+	"opencv2/videostab/fast_marching.hpp"
+	"opencv2/videostab/global_motion.hpp"
+	"opencv2/photo.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/fast_marching.hpp
+	<cmath>
+	<queue>
+	<algorithm>
+	"opencv2/core.hpp"
+	"fast_marching_inl.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/fast_marching_inl.hpp
+	"opencv2/videostab/fast_marching.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/deblurring.hpp
+	<vector>
+	"opencv2/core.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+	<vector>
+	"opencv2/core.hpp"
+	"opencv2/core/cuda.hpp"
+	"opencv2/videostab/global_motion.hpp"
+	"opencv2/videostab/log.hpp"
+
+1511543557 /usr/local/include/opencv2/videostab/ring_buffer.hpp
+	<vector>
+	"opencv2/imgproc.hpp"
+
+1511543521 /usr/local/include/opencv2/core/operations.hpp
+	<cstdio>
+
+1511543521 /usr/local/include/opencv2/core/cvstd.inl.hpp
+	<complex>
+	<ostream>
+
+1511543521 /usr/local/include/opencv2/core/optim.hpp
+	"opencv2/core.hpp"
+
+1511543521 /usr/local/include/opencv2/core/ovx.hpp
+	"cvdef.h"
+
+1497554234 /usr/include/limits.h
+	<features.h>
+	<bits/wordsize.h>
+	<bits/posix1_lim.h>
+	<bits/posix2_lim.h>
+	<bits/xopen_lim.h>
+
+1497554234 /usr/include/features.h
+	<stdc-predef.h>
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1497554234 /usr/include/stdc-predef.h
+
+1497554234 /usr/include/stdint.h
+	<features.h>
+	<bits/wchar.h>
+	<bits/wordsize.h>
+
+1497554234 /usr/include/math.h
+	<features.h>
+	<bits/math-vector.h>
+	<bits/huge_val.h>
+	<bits/huge_valf.h>
+	<bits/huge_vall.h>
+	<bits/inf.h>
+	<bits/nan.h>
+	<bits/mathdef.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls.h>
+	<bits/mathinline.h>
+	<bits/math-finite.h>
+
+1497554234 /usr/include/assert.h
+	<features.h>
+
+1497554234 /usr/include/stdlib.h
+	<features.h>
+	<stddef.h>
+	<bits/waitflags.h>
+	<bits/waitstatus.h>
+	<xlocale.h>
+	<sys/types.h>
+	<alloca.h>
+	<bits/stdlib-bsearch.h>
+	<bits/stdlib-float.h>
+	<bits/stdlib.h>
+	<bits/stdlib-ldbl.h>
+
+1497554234 /usr/include/xlocale.h
+
+1497554234 /usr/include/alloca.h
+	<features.h>
+	<stddef.h>
+
+1497554234 /usr/include/string.h
+	<features.h>
+	<stddef.h>
+	<xlocale.h>
+	<bits/string.h>
+	<bits/string2.h>
+	<bits/string3.h>
+
+1497554234 /usr/include/stdio.h
+	<features.h>
+	<stddef.h>
+	<bits/types.h>
+	<libio.h>
+	<stdarg.h>
+	<bits/stdio_lim.h>
+	<bits/sys_errlist.h>
+	<getopt.h>
+	<bits/stdio.h>
+	<bits/stdio2.h>
+	<bits/stdio-ldbl.h>
+
+1497554234 /usr/include/libio.h
+	<_G_config.h>
+	<stdarg.h>
+	<sys/cdefs.h>
+	<shlib-compat.h>
+	<bits/libio-ldbl.h>
+
+1497554234 /usr/include/_G_config.h
+	<bits/types.h>
+	<stddef.h>
+	<wchar.h>
+	<gconv.h>
+
+1497554234 /usr/include/wchar.h
+	<features.h>
+	<stdio.h>
+	<stdarg.h>
+	<bits/wchar.h>
+	<stddef.h>
+	<wctype.h>
+	<xlocale.h>
+	<xlocale.h>
+	<xlocale.h>
+	<wctype.h>
+	<bits/wchar2.h>
+	<bits/wchar-ldbl.h>
+
+1497554234 /usr/include/wctype.h
+	<features.h>
+	<bits/types.h>
+	<wchar.h>
+	<endian.h>
+	<xlocale.h>
+
+1497554234 /usr/include/endian.h
+	<features.h>
+	<bits/endian.h>
+	<bits/byteswap.h>
+
+1497554234 /usr/include/gconv.h
+	<features.h>
+	<wchar.h>
+	<stddef.h>
+
+1497554234 /usr/include/getopt.h
+	<ctype.h>
+
+1497554234 /usr/include/ctype.h
+	<features.h>
+	<bits/types.h>
+	<endian.h>
+	<xlocale.h>
+
+1497554234 /usr/include/time.h
+	<features.h>
+	<stddef.h>
+	<bits/time.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<xlocale.h>
+
+1509457888 /usr/include/wiringPi.h
+
+1511560080 /home/pi/Vision2537/Vision2537/ws2812-rpi.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdint.h>
+	<dirent.h>
+	<fcntl.h>
+	<assert.h>
+	<sys/mman.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	<time.h>
+	<signal.h>
+	<vector>
+	"ws2812-rpi-defines.h"
+
+1511560648 /home/pi/Vision2537/Vision2537/ws2812-rpi-defines.h
+
+1511563506 source:/home/pi/Vision2537/Vision2537/ws2812-rpi.cpp
+	"ws2812-rpi.h"
+
+1511565203 /home/pi/Vision2537/Vision2537/ws2812-RPi.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdint.h>
+	<dirent.h>
+	<fcntl.h>
+	<assert.h>
+	<sys/mman.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	<time.h>
+	<signal.h>
+	<sys/file.h>
+
+1511565203 source:/home/pi/Vision2537/Vision2537/ws2812-RPi.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdint.h>
+	<dirent.h>
+	<fcntl.h>
+	<assert.h>
+	<sys/mman.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	<time.h>
+	<signal.h>
+	<sys/file.h>
+
+1511573110 source:/home/pi/Vision2537/Vision2537/dma.c
+	<stdint.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<sys/mman.h>
+	"dma.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/dma.h
+
+1511573110 source:/home/pi/Vision2537/Vision2537/mailbox.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<fcntl.h>
+	<unistd.h>
+	<assert.h>
+	<stdint.h>
+	<errno.h>
+	<unistd.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<sys/sysmacros.h>
+	<sys/stat.h>
+	"mailbox.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/mailbox.h
+	<linux/ioctl.h>
+
+1511573110 source:/home/pi/Vision2537/Vision2537/pcm.c
+	<stdint.h>
+	"pcm.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/pcm.h
+
+1511573110 source:/home/pi/Vision2537/Vision2537/pwm.c
+	<stdint.h>
+	"ws2811.h"
+	"pwm.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/ws2811.h
+	"rpihw.h"
+	"pwm.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/rpihw.h
+
+1511573110 /home/pi/Vision2537/Vision2537/pwm.h
+
+1511573110 source:/home/pi/Vision2537/Vision2537/rpihw.c
+	<stdint.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	"rpihw.h"
+
+1511573110 source:/home/pi/Vision2537/Vision2537/ws2811.c
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<sys/mman.h>
+	<signal.h>
+	<linux/types.h>
+	<linux/spi/spidev.h>
+	<time.h>
+	"mailbox.h"
+	"clk.h"
+	"gpio.h"
+	"dma.h"
+	"pwm.h"
+	"pcm.h"
+	"rpihw.h"
+	"ws2811.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/clk.h
+
+1511573110 /home/pi/Vision2537/Vision2537/gpio.h
+
+1511575742 /home/pi/Vision2537/Vision2537/main.c
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<signal.h>
+	<stdarg.h>
+	<getopt.h>
+	"clk.h"
+	"gpio.h"
+	"dma.h"
+	"pwm.h"
+	"version.h"
+	"ws2811.h"
+
+1511573110 /home/pi/Vision2537/Vision2537/version.h
+
+1511579203 /home/pi/Vision2537/Vision2537/neopixel.c
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<signal.h>
+	<stdarg.h>
+	<getopt.h>
+	"clk.h"
+	"gpio.h"
+	"dma.h"
+	"pwm.h"
+	"version.h"
+	"ws2811.h"
+
+1511579663 source:/home/pi/Vision2537/Vision2537/neopixel.c
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<signal.h>
+	<stdarg.h>
+	<getopt.h>
+	"neopixel.h"
+	"clk.h"
+	"gpio.h"
+	"dma.h"
+	"pwm.h"
+	"version.h"
+	"ws2811.h"
+
+1511579618 /home/pi/Vision2537/Vision2537/neopixel.h
+
+1512251247 source:/home/pi/Vision2537/Vision2537/RioSerial.cpp
+	"RioSerial.hpp"
+
+1512253424 /home/pi/Vision2537/Vision2537/RioSerial.hpp
+	<wiringPi.h>
+	<wiringSerial.h>
+	<string>
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<errno.h>
+	<pthread.h>
+
+1512253424 /home/pi/Vision2537/Vision2537//RioSerial.hpp
+	<wiringPi.h>
+	<wiringSerial.h>
+	<string>
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<errno.h>
+	<pthread.h>
+
+1512249435 source:/home/pi/Vision2537/Vision2537/ProtocolHandler.cpp
+	<string>
+	<iostream>
+
+1512280345 source:/home/pi/Vision2537/Vision2537/VisionPacket.cpp
+	"VisionPacket.hpp"
+
+1512250470 source:/home/pi/Vision2537/Vision2537/VisionPacketHandler.cpp
+	<string>
+	<sstream>
+	<iostream>
+	<vector>
+	"stdlib.h"
+	"VisionPacket.cpp"
+
+1512254617 /home/pi/Vision2537/Vision2537/VisionPacket.cpp
+	<string>
+	<sstream>
+	<iostream>
+
+1512259872 source:/home/pi/Vision2537/Vision2537/VisionPacketTest.cpp
+	<iostream>
+	<string>
+	"VisionPacketHandler.cpp"
+	"RioSerial.hpp"
+	<wiringPi.h>
+	<wiringSerial.h>
+
+1512260193 /home/pi/Vision2537/Vision2537/VisionPacketHandler.cpp
+	<string>
+	<sstream>
+	<iostream>
+	<vector>
+	"stdlib.h"
+
+1512279989 /home/pi/Vision2537/Vision2537/VisionPacket.hpp
+	<string>
+	<sstream>
+	<iostream>
+	<vector>
+	<opencv2/core/core.hpp>
+	"stdlib.h"
+
