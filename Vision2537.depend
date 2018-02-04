@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1517076524 source:/home/pi/Vision2537/Vision2537/main.cpp
+1517774650 source:/home/pi/Vision2537/Vision2537/main.cpp
 	<stdlib.h>
 	<iostream>
 	<csignal>
-	"Settings.h"
 	"RioSerial.hpp"
 	"VisionPacket.hpp"
 	"neopixel.h"
@@ -978,7 +977,7 @@
 	<signal.h>
 	<sys/file.h>
 
-1511573110 source:/home/pi/Vision2537/Vision2537/dma.c
+1517016753 source:/home/pi/Vision2537/Vision2537/dma.c
 	<stdint.h>
 	<stdio.h>
 	<string.h>
@@ -989,9 +988,9 @@
 	<sys/mman.h>
 	"dma.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/dma.h
+1517016753 /home/pi/Vision2537/Vision2537/dma.h
 
-1511573110 source:/home/pi/Vision2537/Vision2537/mailbox.c
+1517016753 source:/home/pi/Vision2537/Vision2537/mailbox.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
@@ -1007,29 +1006,29 @@
 	<sys/stat.h>
 	"mailbox.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/mailbox.h
+1517016753 /home/pi/Vision2537/Vision2537/mailbox.h
 	<linux/ioctl.h>
 
-1511573110 source:/home/pi/Vision2537/Vision2537/pcm.c
+1517016753 source:/home/pi/Vision2537/Vision2537/pcm.c
 	<stdint.h>
 	"pcm.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/pcm.h
+1517016753 /home/pi/Vision2537/Vision2537/pcm.h
 
-1511573110 source:/home/pi/Vision2537/Vision2537/pwm.c
+1517016753 source:/home/pi/Vision2537/Vision2537/pwm.c
 	<stdint.h>
 	"ws2811.h"
 	"pwm.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/ws2811.h
+1517016753 /home/pi/Vision2537/Vision2537/ws2811.h
 	"rpihw.h"
 	"pwm.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/rpihw.h
+1517016753 /home/pi/Vision2537/Vision2537/rpihw.h
 
-1511573110 /home/pi/Vision2537/Vision2537/pwm.h
+1517016753 /home/pi/Vision2537/Vision2537/pwm.h
 
-1511573110 source:/home/pi/Vision2537/Vision2537/rpihw.c
+1517016753 source:/home/pi/Vision2537/Vision2537/rpihw.c
 	<stdint.h>
 	<stdio.h>
 	<string.h>
@@ -1037,7 +1036,7 @@
 	<errno.h>
 	"rpihw.h"
 
-1511573110 source:/home/pi/Vision2537/Vision2537/ws2811.c
+1517016753 source:/home/pi/Vision2537/Vision2537/ws2811.c
 	<stdint.h>
 	<stdio.h>
 	<stdlib.h>
@@ -1060,9 +1059,9 @@
 	"rpihw.h"
 	"ws2811.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/clk.h
+1517016753 /home/pi/Vision2537/Vision2537/clk.h
 
-1511573110 /home/pi/Vision2537/Vision2537/gpio.h
+1517016753 /home/pi/Vision2537/Vision2537/gpio.h
 
 1511575742 /home/pi/Vision2537/Vision2537/main.c
 	<stdint.h>
@@ -1084,7 +1083,7 @@
 	"version.h"
 	"ws2811.h"
 
-1511573110 /home/pi/Vision2537/Vision2537/version.h
+1517016753 /home/pi/Vision2537/Vision2537/version.h
 
 1511579203 /home/pi/Vision2537/Vision2537/neopixel.c
 	<stdint.h>
@@ -1106,7 +1105,7 @@
 	"version.h"
 	"ws2811.h"
 
-1517076271 source:/home/pi/Vision2537/Vision2537/neopixel.c
+1517016753 source:/home/pi/Vision2537/Vision2537/neopixel.c
 	<stdint.h>
 	<stdio.h>
 	<stdlib.h>
@@ -1120,7 +1119,6 @@
 	<stdarg.h>
 	<getopt.h>
 	"neopixel.h"
-	"Settings.h"
 	"clk.h"
 	"gpio.h"
 	"dma.h"
@@ -1128,12 +1126,12 @@
 	"version.h"
 	"ws2811.h"
 
-1517076243 /home/pi/Vision2537/Vision2537/neopixel.h
+1517016753 /home/pi/Vision2537/Vision2537/neopixel.h
 
-1517018694 source:/home/pi/Vision2537/Vision2537/RioSerial.cpp
+1517016753 source:/home/pi/Vision2537/Vision2537/RioSerial.cpp
 	"RioSerial.hpp"
 
-1517075846 /home/pi/Vision2537/Vision2537/RioSerial.hpp
+1517016753 /home/pi/Vision2537/Vision2537/RioSerial.hpp
 	<wiringPi.h>
 	<wiringSerial.h>
 	<string>
@@ -1142,7 +1140,6 @@
 	<stdio.h>
 	<errno.h>
 	<pthread.h>
-	"Settings.h"
 
 1512253424 /home/pi/Vision2537/Vision2537//RioSerial.hpp
 	<wiringPi.h>
@@ -1158,7 +1155,7 @@
 	<string>
 	<iostream>
 
-1517075002 source:/home/pi/Vision2537/Vision2537/VisionPacket.cpp
+1517016753 source:/home/pi/Vision2537/Vision2537/VisionPacket.cpp
 	"VisionPacket.hpp"
 
 1512250470 source:/home/pi/Vision2537/Vision2537/VisionPacketHandler.cpp
@@ -1189,7 +1186,7 @@
 	<vector>
 	"stdlib.h"
 
-1512279989 /home/pi/Vision2537/Vision2537/VisionPacket.hpp
+1517016753 /home/pi/Vision2537/Vision2537/VisionPacket.hpp
 	<string>
 	<sstream>
 	<iostream>
@@ -1197,5 +1194,5 @@
 	<opencv2/core/core.hpp>
 	"stdlib.h"
 
-1517083766 /home/pi/Vision2537/Vision2537/Settings.h
+1517773154 source:/home/pi/Vision2537/Vision2537/ObjectDetector.cpp
 

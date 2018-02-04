@@ -13,7 +13,8 @@ extern "C"{
 #include <errno.h>
 #include <pthread.h>
 
-#include "Settings.h"
+#define SERIAL_PORT "/dev/serial0"
+#define BAUDRATE 38400
 
 class RioSerial {
 
@@ -32,7 +33,7 @@ class RioSerial {
 
         RioSerial();
 
-        static void* processSerial(void* args);
+        static void *processSerial(void* args);
 
         static pthread_t thread;
 

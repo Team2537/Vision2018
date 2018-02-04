@@ -2,8 +2,6 @@
 #include <iostream>
 #include <csignal>
 
-#include "Settings.h"
-
 #include "RioSerial.hpp"
 #include "VisionPacket.hpp"
 
@@ -14,6 +12,39 @@ extern "C"{
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
+
+/* DEBUG */
+#define VERBOSE
+#define DISPLAY_VIDEO 0     /* undef: no video   0: raw input   1: threshold */
+//#define DRAW_CONTOURS
+#define DRAW_CONVEX_HULL
+//#define DRAW_BOUNDING_BOXES
+
+/* CAMERA */
+#define FRAME_WIDTH   640  /* Low Res: 640   HD: 1080 */
+#define FRAME_HEIGHT  480  /* Low Res: 480   HD: 720  */
+#define MAX_FPS       255
+
+/* LIGHT RING */
+//#define ACTIVATE_LIGHT_RING 0X0000FF00 /* bytes are arranged: WWBBGGRR where W represents white */
+#define TOTAL_LED     12
+
+/* LOW SEGMENTATION BOUNDARY */
+#define LOW_SEG_H     30
+#define LOW_SEG_L     75
+#define LOW_SEG_S     240
+
+
+/* HIGH SEGMENTATION BOUNDARY */
+#define HIGH_SEG_H    33
+#define HIGH_SEG_L    200
+#define HIGH_SEG_S    255
+
+
+/* OBJECT SEGMENTATION PARAMETERS */
+#define IMAGE_DOWNSAMPLING_FACTOR 8
+#define BOUNDING_BOX_MIN_WIDTH  FRAME_WIDTH  * 0.12
+#define BOUNDING_BOX_MIN_HEIGHT FRAME_HEIGHT * 0.12
 
 /**
  * Called during the destruction a std::atexit(<function>) object
@@ -77,9 +108,10 @@ int main(int argc, char** argv){
 #endif /* DISPLAY_VIDEO */
 
     cv::Mat frame;
+    cv::Mat hls;
     cv::Mat threshold;
-    cv::Scalar lowerSegmentationBoundary(LOW_SEG_B,   LOW_SEG_G,  LOW_SEG_R);
-    cv::Scalar higherSegmentationBoundary(HIGH_SEG_B, HIGH_SEG_G, HIGH_SEG_R);
+    cv::Scalar lowerSegmentationBoundary(LOW_SEG_H,   LOW_SEG_L,  LOW_SEG_S);
+    cv::Scalar higherSegmentationBoundary(HIGH_SEG_H, HIGH_SEG_L, HIGH_SEG_S);
     std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Vec4i> hierarchy;
     std::vector<cv::Point> convexHull;
@@ -94,26 +126,13 @@ int main(int argc, char** argv){
             return -1;
         }
 
-        cv::Scalar mean = cv::mean(frame);
-        //std::cout << mean[0] << " " << mean[1] << " " << mean[2] << std::endl;
+        cv::resize(frame, hls, cv::Size(frame.cols / IMAGE_DOWNSAMPLING_FACTOR, frame.rows / IMAGE_DOWNSAMPLING_FACTOR));
 
-        int bShift;
-        int gShift;
-        int rShift;
-        bShift = (mean[0] - BASE_B) * BRIGHTNESS_ADJUSTMENT;
-        gShift = (mean[1] - BASE_G) * BRIGHTNESS_ADJUSTMENT;
-        rShift = (mean[2] - BASE_R) * BRIGHTNESS_ADJUSTMENT;
+        cv::cvtColor(hls, hls, CV_BGR2HLS);
 
-        cv::Scalar adjustedLowerSegmentationBoundary(lowerSegmentationBoundary[0] + bShift,
-                                                     lowerSegmentationBoundary[1] + gShift,
-                                                     lowerSegmentationBoundary[2] + rShift);
+        cv::inRange(hls, lowerSegmentationBoundary, higherSegmentationBoundary, threshold);
 
-        cv::Scalar adjustedHigherSegmentationBoundary(higherSegmentationBoundary[0] + bShift,
-                                                      higherSegmentationBoundary[1] + gShift,
-                                                      higherSegmentationBoundary[2] + rShift);
-
-        //cv::inRange(frame, lowerSegmentationBoundary, higherSegmentationBoundary, threshold);
-        cv::inRange(frame, adjustedLowerSegmentationBoundary, adjustedHigherSegmentationBoundary, threshold);
+        cv::resize(threshold, threshold, cv::Size(frame.cols, frame.rows), 3, 3, cv::INTER_CUBIC);
 
         cv::findContours(threshold, contours, hierarchy, cv::RETR_LIST, cv::CHAIN_APPROX_SIMPLE);
 
@@ -141,11 +160,8 @@ int main(int argc, char** argv){
 #endif /* DRAW_CONVEX_HULL */
             }
         }
-        std::string serializedString = visionPacket.serialize();
-        RioSerial::write(serializedString);
-#ifdef PRINT_RAW_SERIAL
-        std::cout << serializedString << std::endl;
-#endif /* PRINT_RAW_SERIAL */
+        RioSerial::write(visionPacket.serialize());
+        //std::cout << visionPacket.serialize() << std::endl;
 
 #ifdef VERBOSE
         std::cout << "FPS: " << (cv::getTickFrequency() / (cv::getTickCount() - startTime)) << std::endl;
